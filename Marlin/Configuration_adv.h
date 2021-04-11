@@ -2413,7 +2413,7 @@
   #if AXIS_IS_TMC(X)
     // motor spec says max current = 1.7A
     // so: 1700/1.414 = ~1202mA
-    #define X_CURRENT       950        // (mA) RMS current. Multiply by 1.414 for peak current.
+    #define X_CURRENT       800        // (mA) RMS current. Multiply by 1.414 for peak current.
     #define X_CURRENT_HOME  X_CURRENT/2  // (mA) RMS current for sensorless homing
     #define X_MICROSTEPS     16        // 0..256 -- update DEFAULT_AXIS_STEPS_PER_UNIT if this changes
     #define X_RSENSE          0.11
@@ -2431,7 +2431,7 @@
   #endif
 
   #if AXIS_IS_TMC(Y)
-    #define Y_CURRENT       950
+    #define Y_CURRENT       800
     #define Y_CURRENT_HOME  Y_CURRENT/2
     #define Y_MICROSTEPS     16
     #define Y_RSENSE          0.11
@@ -2449,7 +2449,7 @@
   #endif
 
   #if AXIS_IS_TMC(Z)
-    #define Z_CURRENT       950
+    #define Z_CURRENT       800
     #define Z_CURRENT_HOME  Z_CURRENT/2
     #define Z_MICROSTEPS     16
     #define Z_RSENSE          0.11
@@ -2458,7 +2458,7 @@
   #endif
 
   #if AXIS_IS_TMC(Z2)
-    #define Z2_CURRENT      950
+    #define Z2_CURRENT      800
     #define Z2_CURRENT_HOME Z2_CURRENT
     #define Z2_MICROSTEPS    Z_MICROSTEPS
     #define Z2_RSENSE         0.11
@@ -2485,7 +2485,7 @@
   #endif
 
   #if AXIS_IS_TMC(E0)
-    #define E0_CURRENT      950
+    #define E0_CURRENT      800
     #define E0_MICROSTEPS    16
     #define E0_RSENSE         0.11
     #define E0_CHAIN_POS     -1
