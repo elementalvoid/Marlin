@@ -3285,6 +3285,8 @@
    */
   //#define SENSORLESS_HOMING // StallGuard capable drivers only
 
+  #define DIAG_PINS_REMOVED // Supresses warning about removing pins unless sensorless homing is enabled.
+
   #if EITHER(SENSORLESS_HOMING, SENSORLESS_PROBING)
     // TMC2209: 0...255. TMC2130: -64...63
     #define X_STALL_SENSITIVITY  8

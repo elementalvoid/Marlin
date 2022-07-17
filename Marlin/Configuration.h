@@ -1216,7 +1216,7 @@
  *     MicroSteps: 16  32  64  128
  *     Steps / mm: 80  160 320 640
  *
- *   Z for Sidewinder X1 w/ 1.8 deg step angle, 2mm pitch, 4:1 gear ratio
+ *   Z for Sidewinder X1 w/ 1.8 deg step angle, 8mm pitch, 1:1 gear ratio
  *     MicroSteps: 16  32  64   128
  *     Steps / mm: 400 800 1600 3200
  */
