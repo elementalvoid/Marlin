@@ -1206,8 +1206,21 @@
  * Default Axis Steps Per Unit (linear=steps/mm, rotational=steps/°)
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
+ *
+ * NOTES:
+ *  - Handy calculator: https://blog.prusa3d.com/calculator_3416/
+ *  - Be sure to update X/Y/Z_MICROSTEPS in Configuration_adv.h if updating these.
+ *  - M92 can update these in realtime.
+ *
+ *   X/Y for Sidewinder X1 w/ 1.8 deg step angle, GT2 belt, 2mm pitch, 20 teeth
+ *     MicroSteps: 16  32  64  128
+ *     Steps / mm: 80  160 320 640
+ *
+ *   Z for Sidewinder X1 w/ 1.8 deg step angle, 2mm pitch, 4:1 gear ratio
+ *     MicroSteps: 16  32  64   128
+ *     Steps / mm: 400 800 1600 3200
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.121, 80.121, 399.778, 461 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 640, 640, 3200, 461 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
