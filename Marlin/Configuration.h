@@ -1220,7 +1220,7 @@
  *     MicroSteps: 16  32  64   128
  *     Steps / mm: 400 800 1600 3200
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 640, 640, 3200, 461 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 461 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
